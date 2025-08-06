@@ -13,6 +13,7 @@
             AcceptsReturn="True"
             TextWrapping="Wrap"
             SpellCheck.IsEnabled="True"
-            Language="en-US"/>
+            Language="en-US"
+            Background="AliceBlue"/>
     </StackPanel>
 </Window>
