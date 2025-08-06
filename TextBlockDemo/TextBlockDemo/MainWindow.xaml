@@ -1,0 +1,18 @@
+﻿<Window x:Class="TextBlockDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBlockDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="200">
+    <StackPanel>
+        <TextBlock>Hello <Bold>World</Bold> and hello <Italic>you</Italic>
+        <LineBreak />
+        Go to <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com">google</Hyperlink>
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Foreground="Aqua">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <Span Foreground="Black">sed do</Span>
+            Ut tincidunt malesuada pharetra. Fusce vel eleifend urna. Proin eget tempor lacus. Morbi pulvinar tristique purus. Aenean dignissim, justo quis rhoncus accumsan, justo dui sodales odio, et dictum lectus nibh at arcu. Cras nec mi tristique, varius eros in, dignissim enim.</TextBlock>
+    </StackPanel>
+</Window>

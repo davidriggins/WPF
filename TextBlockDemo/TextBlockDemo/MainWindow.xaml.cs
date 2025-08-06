@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFHelloWorld
+namespace TextBlockDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,8 +23,11 @@ namespace WPFHelloWorld
         public MainWindow()
         {
             InitializeComponent();
-            myButton.FontSize = 50;
-            myButton.Content = "Click Me!";
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
         }
     }
 }

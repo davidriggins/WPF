@@ -8,6 +8,6 @@
         Title="Hello World Window" Height="300" Width="300">
     <StackPanel>
         <Label>Hello David</Label>
-        <Button>Welcome to the course</Button>
+        <Button x:Name="myButton">Welcome to the course</Button>
     </StackPanel>
 </Window>
