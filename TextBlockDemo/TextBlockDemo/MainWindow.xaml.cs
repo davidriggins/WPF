@@ -23,11 +23,18 @@ namespace TextBlockDemo
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
-        {
-            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+            TextBlock myTb = new TextBlock();
+            myTb.Text = "Hello World";
+            myTb.Inlines.Add(" this is added using inlines");
+            myTb.Inlines.Add(new Run(" Run text that I added in code behind")
+            {
+                Foreground = Brushes.Red,
+                TextDecorations = TextDecorations.Underline,
+            });
+            myTb.TextWrapping = TextWrapping.Wrap;
+            myTb.Foreground = Brushes.BurlyWood;
+            this.Content = myTb;
         }
     }
 }
