@@ -1,0 +1,22 @@
+﻿<Window x:Class="CalendarControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarControlDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300">
+    <StackPanel>
+        <Viewbox Stretch="Uniform">
+            <Calendar 
+                x:Name="myCalendar"
+                SelectedDatesChanged="myCalendar_SelectedDatesChanged"
+                >
+                <Calendar.BlackoutDates>
+                    <CalendarDateRange Start="2025-08-01" End="2025-08-15"/>
+                </Calendar.BlackoutDates>
+            </Calendar>
+        </Viewbox>
+        <TextBlock x:Name="myTextBlock"></TextBlock>
+    </StackPanel>
+</Window>
