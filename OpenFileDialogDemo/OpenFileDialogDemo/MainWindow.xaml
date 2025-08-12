@@ -11,13 +11,22 @@
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Name="OpenFileButton"
+        <StackPanel Orientation="Horizontal"
                     Grid.Row="0"
+                    HorizontalAlignment="Center">
+            <Button Name="OpenFileButton"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Click="OpenFileButton_Click"
                     Content="Open file"
                     />
+            <Button Name="SaveFileButton"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="SaveFileButton_Click"
+                Content="Save file"
+                />  
+        </StackPanel>
         <TextBox Name="myTextBox"
                      Grid.Row="1"
                      />
