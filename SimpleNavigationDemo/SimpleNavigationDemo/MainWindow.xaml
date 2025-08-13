@@ -14,8 +14,11 @@
         <StackPanel Grid.Row="0"
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
+            <Button Width="50" Click="Back_Button_Click">&lt;</Button>
             <Button Width="100" Click="Button_Click_1">Page 1</Button>
             <Button Width="100" Click="Button_Click_2">Page 2</Button>
+            <Button Width="100" Click="Button_Click_3">Page 3</Button>
+            <Button Width="50" Click="Forw_Button_Click">&gt;</Button>
         </StackPanel>
         <Frame
             x:Name="MainWindowFrame"
