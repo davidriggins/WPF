@@ -13,6 +13,7 @@
     <None Remove="Icons\comment.png" />
     <None Remove="Icons\like.png" />
     <None Remove="Icons\nolike.png" />
+    <None Remove="Icons\post1.jpg" />
     <None Remove="Icons\send.png" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <Resource Include="Icons\comment.png" />
     <Resource Include="Icons\like.png" />
     <Resource Include="Icons\nolike.png" />
+    <Resource Include="Icons\post1.jpg" />
     <Resource Include="Icons\send.png" />
   </ItemGroup>
 
