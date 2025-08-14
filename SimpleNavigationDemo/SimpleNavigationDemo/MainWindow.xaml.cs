@@ -28,6 +28,10 @@ namespace SimpleNavigationDemo
             FirstPage = new Page1();
             SecondPage = new Page2();
             ThirdPage = new Page3();
+
+            ThirdPage.GoToPage1ButtonClick += Button_Click_1;
+            SecondPage.GoToPage1ButtonClick += Button_Click_1;
+            SecondPage.GoToPage3ButtonClick += Button_Click_3;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
