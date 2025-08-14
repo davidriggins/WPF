@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:InstaUserControlDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
         <local:PostOperationsUC Height="40" />
-    </Grid>
+        <local:PostLikedByUC></local:PostLikedByUC>
+    </StackPanel>
 </Window>
