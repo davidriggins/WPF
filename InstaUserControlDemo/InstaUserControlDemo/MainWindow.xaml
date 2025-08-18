@@ -7,7 +7,6 @@
         xmlns:uc="clr-namespace:InstaUserControlDemo.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="450">
-    <StackPanel>
-        <uc:PicturePostUC></uc:PicturePostUC>
+    <StackPanel x:Name="MainStackPanel">
     </StackPanel>
 </Window>
