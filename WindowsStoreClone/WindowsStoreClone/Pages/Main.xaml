@@ -30,28 +30,47 @@
             Grid.RowSpan="2"
             Grid.ColumnSpan="2"
             ClipToBounds="True"
-            >
+        >
             <TabItem
                 Header="Home"
-                Name="HomeTab">
+                Name="HomeTab"
+            >
                 <ScrollViewer
                     Name="MainScrollViewer"
                     Margin="10"
                     HorizontalScrollBarVisibility="Hidden"
-                    VerticalScrollBarVisibility="Hidden">
+                    VerticalScrollBarVisibility="Hidden"
+                    Loaded="MainScrollViewer_Loaded"
+                >
+
+                    <!--<ScrollViewer.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                        From="0"
+                                        To="1"
+                                        Duration="0:0:1"
+                                        Storyboard.TargetProperty="Opacity" 
+                                    />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ScrollViewer.Triggers>-->
+                    
                     <StackPanel
                         Name="MainHomeStackPanel"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Left"
                         Visibility="Visible"
                         Width="{Binding ElementName=MainScrollViewer, Path=ActualWidth}"
-                        >
+                    >
                         <uc:TopAppsUC
                             x:Name="TopApps"
                             HorizontalAlignment="Left"
                             Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
                             Margin="2"
-                            />
+                        />
 
                         <Label
                             HorizontalAlignment="Left"
@@ -62,7 +81,8 @@
                             x:Name="FeaturesAppViewer"
                             Width="{Binding ElementName=MainScrollViewer, Path=ActualWidth}"
                             HorizontalAlignment="Left"
-                            Margin="2" />
+                            Margin="2" 
+                        />
 
                         <Label
                             HorizontalAlignment="Left"
@@ -73,7 +93,8 @@
                             x:Name="MostPopularAppViewer"
                             Width="{Binding ElementName=MainScrollViewer, Path=ActualWidth}"
                             HorizontalAlignment="Left"
-                            Margin="2" />
+                            Margin="2" 
+                        />
 
                         <Label
                             HorizontalAlignment="Left"
@@ -84,7 +105,8 @@
                             x:Name="TopFreeAppViewer"
                             Width="{Binding ElementName=MainScrollViewer, Path=ActualWidth}"
                             HorizontalAlignment="Left"
-                            Margin="2" />
+                            Margin="2" 
+                        />
 
                         <Label
                             HorizontalAlignment="Left"
@@ -95,7 +117,8 @@
                             x:Name="TopFreeGamesAppViewer"
                             Width="{Binding ElementName=MainScrollViewer, Path=ActualWidth}"
                             HorizontalAlignment="Left"
-                            Margin="2" />
+                            Margin="2" 
+                        />
 
                     </StackPanel>
                 </ScrollViewer>
