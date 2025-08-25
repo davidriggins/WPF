@@ -37,7 +37,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/TopAppIcons/82-circus fun.png"
+            Source="pack://application:,,,/Images/TopAppIcons/82-circus fun.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -48,7 +48,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/TopAppIcons/83-Race extreme.png"
+            Source="pack://application:,,,/Images/TopAppIcons/83-Race extreme.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -59,7 +59,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/TopAppIcons/84-chat message.png"
+            Source="pack://application:,,,/Images/TopAppIcons/84-chat message.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />

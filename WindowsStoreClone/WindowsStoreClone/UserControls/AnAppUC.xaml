@@ -17,7 +17,7 @@
         <Image Grid.Row="0" 
                Name="ProductImage" 
                MouseUp="ProductImage_MouseUp"
-               Source='/Images/001-mail inbox app.png'
+               Source='pack://application:,,,/Images/001-mail inbox app.png'
                />
         <Grid x:Name="BottomGrid"
               Grid.Row="1"

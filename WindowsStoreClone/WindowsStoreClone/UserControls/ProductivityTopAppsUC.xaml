@@ -37,7 +37,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/ProductivityAppIcons/ACDSee.png"
+            Source="pack://application:,,,/Images/ProductivityAppIcons/ACDSee.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -48,7 +48,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/ProductivityAppIcons/DrawboardPDF.png"
+            Source="pack://application:,,,/Images/ProductivityAppIcons/DrawboardPDF.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -61,7 +61,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/ProductivityAppIcons/HotspotShield.png"
+            Source="pack://application:,,,/Images/ProductivityAppIcons/HotspotShield.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -71,7 +71,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/ProductivityAppIcons/PicsArt.png"
+            Source="pack://application:,,,/Images/ProductivityAppIcons/PicsArt.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
@@ -82,7 +82,7 @@
             VerticalAlignment="Stretch"
             HorizontalAlignment="Stretch"
             Stretch="Fill"
-            Source="/Images/ProductivityAppIcons/YourPhone.png"
+            Source="pack://application:,,,/Images/ProductivityAppIcons/YourPhone.png"
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
             />
