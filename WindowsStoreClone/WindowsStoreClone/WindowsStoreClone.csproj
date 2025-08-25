@@ -10,6 +10,12 @@
 
   <ItemGroup>
     <None Remove="Images\001-mail inbox app.png" />
+    <None Remove="Images\ProductivityAppIcons\ACDSee.png" />
+    <None Remove="Images\ProductivityAppIcons\DrawboardPDF.png" />
+    <None Remove="Images\ProductivityAppIcons\HotspotShield.png" />
+    <None Remove="Images\ProductivityAppIcons\Photoshop.png" />
+    <None Remove="Images\ProductivityAppIcons\PicsArt.png" />
+    <None Remove="Images\ProductivityAppIcons\YourPhone.png" />
     <None Remove="Images\TopAppIcons\81-tropical.png" />
     <None Remove="Images\TopAppIcons\82-circus fun.png" />
     <None Remove="Images\TopAppIcons\83-Race extreme.png" />
@@ -23,6 +29,12 @@
 
   <ItemGroup>
     <Resource Include="Images\001-mail inbox app.png" />
+    <Resource Include="Images\ProductivityAppIcons\ACDSee.png" />
+    <Resource Include="Images\ProductivityAppIcons\DrawboardPDF.png" />
+    <Resource Include="Images\ProductivityAppIcons\HotspotShield.png" />
+    <Resource Include="Images\ProductivityAppIcons\Photoshop.png" />
+    <Resource Include="Images\ProductivityAppIcons\PicsArt.png" />
+    <Resource Include="Images\ProductivityAppIcons\YourPhone.png" />
     <Resource Include="Images\TopAppIcons\81-tropical.png" />
     <Resource Include="Images\TopAppIcons\82-circus fun.png" />
     <Resource Include="Images\TopAppIcons\83-Race extreme.png" />
