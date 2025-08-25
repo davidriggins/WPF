@@ -23,6 +23,9 @@ namespace WindowsStoreClone.UserControls
     /// </summary>
     public partial class AnAppUC : UserControl
     {
+
+        public ImageSource AppImageSource;
+
         public AnAppUC()
         {
             InitializeComponent();
@@ -39,6 +42,9 @@ namespace WindowsStoreClone.UserControls
                 .Split('\\').Last()
                 .Split('-').Last()
                 .Split('.').First());
+
+            AppImageSource = ProductImage.Source;
+
         }
 
         private void ProductImage_MouseUp(object sender, MouseButtonEventArgs e)
