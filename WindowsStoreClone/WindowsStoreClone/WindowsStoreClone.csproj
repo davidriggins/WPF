@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <None Remove="Images\001-mail inbox app.png" />
+    <None Remove="Images\TopAppIcons\81-tropical.png" />
+    <None Remove="Images\TopAppIcons\82-circus fun.png" />
+    <None Remove="Images\TopAppIcons\83-Race extreme.png" />
+    <None Remove="Images\TopAppIcons\84-chat message.png" />
+    <None Remove="Images\TopAppIcons\85-Night castle.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +23,11 @@
 
   <ItemGroup>
     <Resource Include="Images\001-mail inbox app.png" />
+    <Resource Include="Images\TopAppIcons\81-tropical.png" />
+    <Resource Include="Images\TopAppIcons\82-circus fun.png" />
+    <Resource Include="Images\TopAppIcons\83-Race extreme.png" />
+    <Resource Include="Images\TopAppIcons\84-chat message.png" />
+    <Resource Include="Images\TopAppIcons\85-Night castle.png" />
   </ItemGroup>
 
 </Project>
