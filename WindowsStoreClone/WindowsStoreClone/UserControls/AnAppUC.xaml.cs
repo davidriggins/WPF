@@ -26,6 +26,10 @@ namespace WindowsStoreClone.UserControls
 
         public ImageSource AppImageSource;
 
+        public delegate void OnAppClicked(AnAppUC sender, RoutedEventArgs e);
+        public event OnAppClicked AppClicked;
+
+
         public AnAppUC()
         {
             InitializeComponent();
@@ -49,7 +53,7 @@ namespace WindowsStoreClone.UserControls
 
         private void ProductImage_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
+            AppClicked?.Invoke(this, e);
         }
     }
 }

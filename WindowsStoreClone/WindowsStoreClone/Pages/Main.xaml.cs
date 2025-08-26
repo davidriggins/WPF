@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WindowsStoreClone.UserControls;
 
 namespace WindowsStoreClone.Pages
 {
@@ -21,9 +22,30 @@ namespace WindowsStoreClone.Pages
     /// </summary>
     public partial class Main : Page
     {
+        public delegate void OnAppClicked(AnAppUC sender, RoutedEventArgs e);
+        public event OnAppClicked AppClicked;
+
         public Main()
         {
             InitializeComponent();
+
+            DealsAppsViewer.AppClicked += AnAppClicked;
+
+            ProductivityAppsL1.AppClicked += AnAppClicked;
+            ProductivityAppsL2.AppClicked += AnAppClicked;
+            ProductivityAppsL3.AppClicked += AnAppClicked;
+
+            EntertainmentAppsViewer.AppClicked += AnAppClicked;
+            GamingAppsViewer.AppClicked += AnAppClicked;
+            FeaturesAppViewer.AppClicked += AnAppClicked;
+            MostPopularAppViewer.AppClicked += AnAppClicked;
+            TopFreeAppViewer.AppClicked += AnAppClicked;
+            TopFreeGamesAppViewer.AppClicked += AnAppClicked;
+        }
+
+        private void AnAppClicked(AnAppUC sender, RoutedEventArgs e)
+        {
+            AppClicked?.Invoke(sender, e);
         }
 
         private void MainScrollViewer_Loaded(object sender, RoutedEventArgs e)

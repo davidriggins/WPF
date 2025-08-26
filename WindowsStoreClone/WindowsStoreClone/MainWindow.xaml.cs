@@ -24,11 +24,16 @@ public partial class MainWindow : Window
         InitializeComponent();
 
         MainWindowContentPage = new Main();
+        MainWindowContentPage.AppClicked += MainWindowContentPage_AppClicked;
+    }
+
+    private void MainWindowContentPage_AppClicked(object sender, RoutedEventArgs e)
+    {
+
     }
 
     private void MainWindowFrame_Loaded(object sender, RoutedEventArgs e)
     {
-        AppDetails myAppDetails = new AppDetails();
-        MainWindowFrame.Content = myAppDetails;
+        MainWindowFrame.Content = MainWindowContentPage;
     }
 }
