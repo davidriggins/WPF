@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Images\001-mail inbox app.png" />
+    <None Remove="Images\AppDetailIcons\01-tea.png" />
+    <None Remove="Images\AppDetailIcons\FieldBackground.jpg" />
     <None Remove="Images\ProductivityAppIcons\ACDSee.png" />
     <None Remove="Images\ProductivityAppIcons\DrawboardPDF.png" />
     <None Remove="Images\ProductivityAppIcons\HotspotShield.png" />
@@ -29,6 +31,10 @@
 
   <ItemGroup>
     <Resource Include="Images\001-mail inbox app.png" />
+    <Resource Include="Images\AppDetailIcons\01-tea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AppDetailIcons\FieldBackground.jpg" />
     <Resource Include="Images\ProductivityAppIcons\ACDSee.png" />
     <Resource Include="Images\ProductivityAppIcons\DrawboardPDF.png" />
     <Resource Include="Images\ProductivityAppIcons\HotspotShield.png" />
