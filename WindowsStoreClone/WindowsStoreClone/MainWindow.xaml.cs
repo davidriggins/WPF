@@ -31,6 +31,8 @@ public partial class MainWindow : Window
     {
         AppDetails myAppDetails = new AppDetails(sender as UserControls.AnAppUC);
         myAppDetails.BackButtonClicked += MyAppDetails_BackButtonClicked;
+        myAppDetails.AppClicked += MainWindowContentPage_AppClicked;
+
         MainWindowFrame.Content = myAppDetails;
     }
 
