@@ -29,7 +29,17 @@ public partial class MainWindow : Window
 
     private void MainWindowContentPage_AppClicked(object sender, RoutedEventArgs e)
     {
+        AppDetails myAppDetails = new AppDetails(sender as UserControls.AnAppUC);
+        myAppDetails.BackButtonClicked += MyAppDetails_BackButtonClicked;
+        MainWindowFrame.Content = myAppDetails;
+    }
 
+    private void MyAppDetails_BackButtonClicked(object sender, RoutedEventArgs e)
+    {
+        if (MainWindowFrame.NavigationService.CanGoBack)
+        {
+            MainWindowFrame.NavigationService.GoBack();
+        }
     }
 
     private void MainWindowFrame_Loaded(object sender, RoutedEventArgs e)
