@@ -28,6 +28,7 @@ public partial class MainWindow : Window
 
     private void MainWindowFrame_Loaded(object sender, RoutedEventArgs e)
     {
-        MainWindowFrame.Content = MainWindowContentPage;
+        AppDetails myAppDetails = new AppDetails();
+        MainWindowFrame.Content = myAppDetails;
     }
 }
