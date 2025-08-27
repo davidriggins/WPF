@@ -40,7 +40,7 @@
                         <ucappdet:OverviewUC x:Name="OverviewTabUC"></ucappdet:OverviewUC>
                     </TabItem>
                     <TabItem Header="System Requirements">
-
+                        <ucappdet:SystemRequirementsUC />
                     </TabItem>
                     <TabItem Header="Reviews">
 
