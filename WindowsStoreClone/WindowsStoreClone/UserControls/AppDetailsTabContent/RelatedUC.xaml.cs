@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,21 +16,13 @@ using System.Windows.Shapes;
 namespace WindowsStoreClone.UserControls.AppDetailsTabContent
 {
     /// <summary>
-    /// Interaction logic for ReviewsUC.xaml
+    /// Interaction logic for RelatedUC.xaml
     /// </summary>
-    public partial class ReviewsUC : UserControl
+    public partial class RelatedUC : UserControl
     {
-        public ReviewsUC()
+        public RelatedUC()
         {
             InitializeComponent();
-
-            MainStackPanel.Children.Clear();
-
-            for (int i = 0; i < 10; i++)
-            {
-                MainStackPanel.Children.Add(new AReviewUC());
-            }
         }
-
     }
 }

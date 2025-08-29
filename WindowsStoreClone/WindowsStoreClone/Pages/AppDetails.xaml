@@ -46,7 +46,7 @@
                         <ucappdet:ReviewsUC></ucappdet:ReviewsUC>
                     </TabItem>
                     <TabItem Header="Related">
-
+                        <ucappdet:RelatedUC></ucappdet:RelatedUC>
                     </TabItem>
                 </TabControl>
                 
