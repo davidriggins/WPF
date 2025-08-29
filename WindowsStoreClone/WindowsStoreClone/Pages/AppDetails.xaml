@@ -43,7 +43,7 @@
                         <ucappdet:SystemRequirementsUC />
                     </TabItem>
                     <TabItem Header="Reviews">
-
+                        <ucappdet:ReviewsUC></ucappdet:ReviewsUC>
                     </TabItem>
                     <TabItem Header="Related">
 

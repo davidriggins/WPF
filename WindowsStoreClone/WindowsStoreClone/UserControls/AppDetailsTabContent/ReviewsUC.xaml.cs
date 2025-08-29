@@ -24,5 +24,14 @@ namespace WindowsStoreClone.UserControls.AppDetailsTabContent
         {
             InitializeComponent();
         }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 10; i++) 
+            { 
+                (sender as StackPanel).Children.Add(new AReviewUC());
+            }
+
+        }
     }
 }

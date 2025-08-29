@@ -37,20 +37,20 @@
                     Foreground="White"
                     Content="PC" />
             </StackPanel>
-
-            <StackPanel x:Name="StarSP"
+        </StackPanel>
+        <StackPanel x:Name="StarSP"
                         Grid.Column="1">
-                <Label Name="NumOfStarsLabel"
+            <Label Name="NumOfStarsLabel"
                        FontSize="30"
                        Foreground="White"
                        Content="****" />
-                <Label Name="ReviewTitle"
+            <Label Name="ReviewTitle"
                        VerticalAlignment="Top"
                        FontSize="30"
                        Foreground="White"
                        Content="This app is really awesome" />
 
-                <TextBlock
+            <TextBlock
                     VerticalAlignment="Top"
                     FontSize="12"
                     Foreground="White"
@@ -63,13 +63,12 @@
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat 
                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </TextBlock>
-                <Label
+            </TextBlock>
+            <Label
                     VerticalAlignment="Top"
                     FontSize="12"
                     Foreground="#434343"
                     Content="77 out of 87 people found this helpful" />
-            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>

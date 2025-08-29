@@ -35,6 +35,7 @@ namespace WindowsStoreClone.UserControls.AppDetailsTabContent
             ReviewerNameLabel.Content = reviewerName;
             AvatarLabel.Content = reviewerName[0];
             NumOfStarsLabel.Content = GetRandomNumOfStars();
+            ReviewTitle.Content = GetReviewTitleBasedOnStars(NumOfStarsLabel.Content.ToString());
         }
 
         private string GetRandomNumOfStars()
