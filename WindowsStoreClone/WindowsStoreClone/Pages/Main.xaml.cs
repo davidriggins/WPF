@@ -31,6 +31,8 @@ namespace WindowsStoreClone.Pages
 
             DealsAppsViewer.AppClicked += AnAppClicked;
 
+            ProductivityTopApps.AppClicked += AnAppClicked;
+
             ProductivityAppsL1.AppClicked += AnAppClicked;
             ProductivityAppsL2.AppClicked += AnAppClicked;
             ProductivityAppsL3.AppClicked += AnAppClicked;
