@@ -20,6 +20,10 @@ namespace WindowsStoreClone.UserControls
     /// </summary>
     public partial class HeaderRightButtonsUC : UserControl
     {
+        public delegate void OnDownloadButtonClic(object sender, RoutedEventArgs e);
+        public event OnDownloadButtonClic HeaderRightButtonsDownloadButtonClick;
+
+
         public HeaderRightButtonsUC()
         {
             InitializeComponent();
@@ -27,17 +31,27 @@ namespace WindowsStoreClone.UserControls
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
+            (sender as Button).Visibility = Visibility.Collapsed;
+            SearchTextBox.Visibility = Visibility.Visible;
+        }
 
+        public void MouseDown_OutsideOfHeaderRightButtons(object sender, MouseButtonEventArgs e)
+        {
+            if (!SearchTextBox.IsMouseOver)
+            {
+                SearchTextBox.Visibility = Visibility.Collapsed;
+                SearchButton.Visibility = Visibility.Visible;
+            }
         }
 
         private void DownloadButton_Click(object sender, RoutedEventArgs e)
         {
-
+            HeaderRightButtonsDownloadButtonClick(sender, e);
         }
 
         private void DownloadsAndUpdatesMenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            HeaderRightButtonsDownloadButtonClick(sender, e);
         }
     }
 }

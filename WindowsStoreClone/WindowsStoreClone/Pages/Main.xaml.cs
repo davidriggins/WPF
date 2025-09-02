@@ -48,11 +48,18 @@ namespace WindowsStoreClone.Pages
             MostPopularAppViewer.AppClicked += AnAppClicked;
             TopFreeAppViewer.AppClicked += AnAppClicked;
             TopFreeGamesAppViewer.AppClicked += AnAppClicked;
+
+            RightHeaderButtons.HeaderRightButtonsDownloadButtonClick += RightHeaderButtons_HeaderRightButtonsDownloadButtonClick;
         }
 
         private void AnAppClicked(AnAppUC sender, RoutedEventArgs e)
         {
             AppClicked?.Invoke(sender, e);
+        }
+
+        private void RightHeaderButtons_HeaderRightButtonsDownloadButtonClick(object sender, RoutedEventArgs e)
+        {
+            //TODO: Step 7: This will UC will be implemented in the next chapter
         }
 
         private void MainScrollViewer_Loaded(object sender, RoutedEventArgs e)
@@ -67,6 +74,13 @@ namespace WindowsStoreClone.Pages
         private void TopApps_TopAppButtonClicked(object sender, RoutedEventArgs e)
         {
             TopAppButtonClicked?.Invoke(sender, e);
+        }
+
+        private void Page_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //TODO: Step 5: Signal that mouse has been clicked somewhere outside
+            //of the header right buttons user control
+            RightHeaderButtons.MouseDown_OutsideOfHeaderRightButtons(IsMouseOver, e);
         }
     }
 }
