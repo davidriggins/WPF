@@ -21,6 +21,9 @@ namespace WindowsStoreClone.UserControls
         public delegate void OnAnAppClicked(AnAppUC sender, RoutedEventArgs e);
         public event OnAnAppClicked AppClicked;
 
+        public delegate void OnTopAppButtonClicked(object sender, RoutedEventArgs e);
+        public event OnTopAppButtonClicked TopAppButtonClicked;
+
 
         public TopAppsUC()
         {
@@ -37,6 +40,11 @@ namespace WindowsStoreClone.UserControls
             );
 
             AppClicked(new AnAppUC(appName, (sender as Image).Source), e);
+        }
+
+        private void TopAppsButton_Click(object sender, RoutedEventArgs e)
+        {
+            TopAppButtonClicked(sender, e);
         }
     }
 }

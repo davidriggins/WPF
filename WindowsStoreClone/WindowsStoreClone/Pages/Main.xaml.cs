@@ -25,6 +25,9 @@ namespace WindowsStoreClone.Pages
         public delegate void OnAppClicked(AnAppUC sender, RoutedEventArgs e);
         public event OnAppClicked AppClicked;
 
+        public delegate void OnTopAppButtonClicked(object sender, RoutedEventArgs e);
+        public event OnTopAppButtonClicked TopAppButtonClicked;
+
         public Main()
         {
             InitializeComponent();
@@ -37,6 +40,7 @@ namespace WindowsStoreClone.Pages
             ProductivityAppsL2.AppClicked += AnAppClicked;
             ProductivityAppsL3.AppClicked += AnAppClicked;
 
+            TopApps.TopAppButtonClicked += TopApps_TopAppButtonClicked;
             TopApps.AppClicked += AnAppClicked;
             EntertainmentAppsViewer.AppClicked += AnAppClicked;
             GamingAppsViewer.AppClicked += AnAppClicked;
@@ -58,6 +62,11 @@ namespace WindowsStoreClone.Pages
             DoubleAnimation animation = new DoubleAnimation(0, 1, TimeSpan.FromSeconds(1));
 
             element.BeginAnimation(UIElement.OpacityProperty, animation);
+        }
+
+        private void TopApps_TopAppButtonClicked(object sender, RoutedEventArgs e)
+        {
+            TopAppButtonClicked?.Invoke(sender, e);
         }
     }
 }

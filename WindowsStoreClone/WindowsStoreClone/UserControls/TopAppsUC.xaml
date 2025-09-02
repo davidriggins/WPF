@@ -83,7 +83,8 @@
                 FontSize="18"
                 Grid.Row="0"
                 Grid.Column="0"
-                Margin="2,2,2,2">Top Apps</Button>
+                Margin="2,2,2,2"
+                Click="TopAppsButton_Click">Top Apps</Button>
             <Button
                 x:Name="FeaturedButton"
                 FontSize="18"
