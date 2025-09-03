@@ -38,6 +38,7 @@ public partial class MainWindow : MetroWindow
         MyTopAppsWrappedPage.BackButtonClicked += BackButtonClicked;
 
         DownloadsAndUpdatesPage = new DownloadsAndUpdates();
+        DownloadsAndUpdatesPage.BackButtonClicked += BackButtonClicked;
     }
 
     private void MainWindowContentPage_TopAppButtonClicked(object sender, RoutedEventArgs e)
