@@ -89,7 +89,7 @@
                            ItemTemplate="{StaticResource HamburgerMenuItem}"
                            OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}"
                            SelectedIndex="1"
-                           Style="{StaticResource MahAps.Styles.HamburgerMenu.CreatorsUpdate}"
+                           Style="{StaticResource MahApps.Styles.HamburgerMenu.CreatorsUpdate}"
                            VerticalScrollBarOnLeftSide="False">
             <mah:HamburgerMenu.ItemsSource>
                 <mah:HamburgerMenuItemCollection>
@@ -126,6 +126,29 @@
                     
                 </mah:HamburgerMenuItemCollection>
             </mah:HamburgerMenu.ItemsSource>
+
+            <mah:HamburgerMenu.ContentTemplate>
+                <DataTemplate>
+                    <Grid x:Name="ContentGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="48" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0">
+                            <TextBlock x:Name="Header"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="24"
+                                       Text="{Binding Labbel}" />
+                        </Border>
+
+                        <mah:TransitioningContentControl x:Name="TheContent"
+                                                         Grid.Row="1"
+                                                         Focusable="False"
+                                                         Content="{Binding Tag}" />
+                    </Grid>
+                </DataTemplate>
+            </mah:HamburgerMenu.ContentTemplate>
         </mah:HamburgerMenu>
     </Grid>
 </Page>

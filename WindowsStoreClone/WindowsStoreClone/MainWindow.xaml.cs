@@ -20,6 +20,7 @@ public partial class MainWindow : MetroWindow
 {
     private Main MainWindowContentPage;
     private TopAppsWrapped MyTopAppsWrappedPage;
+    private DownloadsAndUpdates DownloadsAndUpdatesPage;
 
     public MainWindow()
     {
@@ -29,15 +30,24 @@ public partial class MainWindow : MetroWindow
         MainWindowContentPage.AppClicked += MainWindowContentPage_AppClicked;
         MainWindowContentPage.TopAppButtonClicked += MainWindowContentPage_TopAppButtonClicked;
 
+        MainWindowContentPage.DownloadsAndUpdatesClicked += MainWindowContentPage_DownloadsAndUpdatesClicked;
+
         MyTopAppsWrappedPage = new TopAppsWrapped();
         MyTopAppsWrappedPage.AnAppClicked += MainWindowContentPage_AppClicked;
 
         MyTopAppsWrappedPage.BackButtonClicked += BackButtonClicked;
+
+        DownloadsAndUpdatesPage = new DownloadsAndUpdates();
     }
 
     private void MainWindowContentPage_TopAppButtonClicked(object sender, RoutedEventArgs e)
     {
         MainWindowFrame.Content = MyTopAppsWrappedPage;
+    }
+
+    private void MainWindowContentPage_DownloadsAndUpdatesClicked()
+    {
+        MainWindowFrame.Content = DownloadsAndUpdatesPage;
     }
 
     private void MainWindowContentPage_AppClicked(object sender, RoutedEventArgs e)
