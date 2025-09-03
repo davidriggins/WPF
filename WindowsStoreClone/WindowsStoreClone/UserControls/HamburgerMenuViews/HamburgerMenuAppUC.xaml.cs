@@ -43,7 +43,7 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
                 "Avatars"
             };
 
-            List<string> filepaths = Directory.GetFiles(Environment.CurrentDirectory + @"\..\..Images\MiniIcons", "*.png").ToList();
+            List<string> filepaths = Directory.GetFiles(Environment.CurrentDirectory + @"\..\..\..\Images\MiniIcons", "*.png").ToList();
             FileInfo myRandomFile = new FileInfo(filepaths[new Random().Next(0, filepaths.Count)]);
             AppImage.Source = new BitmapImage(new Uri(myRandomFile.FullName, UriKind.RelativeOrAbsolute));
             AppNameLabel.Content = (new CultureInfo("en-US", false).TextInfo).ToTitleCase(
