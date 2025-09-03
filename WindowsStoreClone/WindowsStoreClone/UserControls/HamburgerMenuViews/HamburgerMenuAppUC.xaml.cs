@@ -37,10 +37,10 @@ namespace WindowsStoreClone.UserControls.HamburgerMenuViews
 
             AppTypes = new List<string>()
             {
-                "App",
-                "Game",
-                "Movie",
-                "Avatar"
+                "Apps",
+                "Games",
+                "Movies",
+                "Avatars"
             };
 
             List<string> filepaths = Directory.GetFiles(Environment.CurrentDirectory + @"\..\..Images\MiniIcons", "*.png").ToList();
